@@ -1,0 +1,17 @@
+########LEIA#########
+''	DESENVOLVIDO POR MANOEL GOMES BORGES
+		TURMA CC2017		'''
+
+#!/O codigo foi feito em python3.6 e foi desenvolvido o mais proximo possivel 
+da orientação a objeto, principalmente as classes Memoria, Cache e Barramento.
+#O software conta com uma interface grafica da biblioteca PyQt4, ou seja para rodar o
+software é preciso intalar os pacotes SIP e PyQt4 na versão do python3
+#Minha classe principal é a Main.py, nela serão manipuladas todas as outras classes
+#No inicio do programa o usuario deve informar uma quantidade de bit(DA MEMORIA PRINCIPAL) entre [2, 10], caso
+o contrario o programa não dará continuidade.
+#As linhas de cache são calculadas atraves do seguinte calculo:
+O usuario informa a quantidade de bit da memoria principal em uma variavel X
+os bits de indice é calculado atraves do teto do log(X) na base 2, que será armazenada em uma variavel Y,
+logo os bits de tag sera calculada por: tag = (X - Y)
+#Essas são umas considerações importantes a fazer-se, considere também uma entrada perfeita no software
+
